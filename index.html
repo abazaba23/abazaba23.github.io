@@ -1,180 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript in Seperate File</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
 
-<head>
-	<meta charset="utf-8">
-	<title>Steven Andersen</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-
-	<div class="row">
-		<div class="container">
-			<!-- left side -->
-			<div class="col">
-				<div class="row aboutme">
-					<h1>Steven Andersen</h1>
-
-					<div class="col">
-						<img id="selfie" src="images/stevenandersen2.jpg">
-					</div>
-					<div class="col">
-						<p>An aspiring game developer and web developer. In a committed relationship with computer technology, digital-experiences,
-							weapons technology, and my irl love:
-							<a href="https://www.google.com">Monet Benson</a>. c:</p>
-					</div>
-				</div>
-				<div class="row projects">
-					<h2>current projects</h2>
-					<!-- put two iframes, one wide for desktop, one square for mobile, and hide with css -->
-					
-					<div class="row">
-						<iframe frameborder="0" src="https://itch.io/embed/84256?border_width=0&amp;dark=true" width="550" height="165"></iframe>
-					</div>
-					
-					<div class="col-image">
-						<img id="book" src="images/unity.png">
-					</div>
-					<div class="col-text">
-						<ul>
-							<li>A survival game made in Unity 3D</li>
-							<li>Working on cooperation with Brandon Ruffin</li>
-							<li>Expected release date: May 2020</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="row friends">
-
-					<h2>friends</h2>
-
-					<div class="row">
-						<div class="col-image">
-							<img id="book" src="images/stevenandersen3.jpg">
-						</div>
-						<div class="col-text">
-							<p>this is some placeholder person who does stuff. some of that stuff includes things like this, that, something, and
-								other things as well.</p>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-image">
-							<img id="book" src="images/stevenandersen3.jpg">
-						</div>
-						<div class="col-text">
-							<p>this is some placeholder person who does stuff. some of that stuff includes things like this, that, something, and
-								other things as well.</p>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-image">
-							<img id="book" src="images/stevenandersen3.jpg">
-						</div>
-						<div class="col-text">
-							<p>this is some placeholder person who does stuff. some of that stuff includes things like this, that, something, and
-								other things as well.</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- right side -->
-
-			<div class="col">
-				<div class="links">
-					<h2>find me here</h2>
-					<li>
-						<a href="https://github.com/abazaba23">
-							<img class="link" src="icons/github.svg">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/">
-							<img class="link" src="icons/linkedin.svg">
-						</a>
-					</li>
-					<li>
-						<a href="https://sandersen23.itch.io/">
-							<img class="link" src="icons/itch.svg" style="width: 110%">
-						</a>
-					</li>
-				</div>
-			</div>
-
-			<!-- books section -->
-			<div class="col">
-				<div class="row">
-					<h2>what i'm reading</h2>
+		<h1>The great 
+			<br>
+			<span id="colorDisplay">RGB</span>
+			<br>
+			color game.</h1>
 
 
-					<div class="col-image">
-						<img id="book" src="images/bow.jpg">
-					</div>
-					<div class="col-text">
-						<p>
-							<span>I</span> am still working on finding myself, and from what I've read of this book, the writing is great, resources
-							abound, and will help guide me as I figure out what to make of myself at this point in my life. Highly recommended
-							to any self-employed or people looking to be driven by themselves.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-text">
-						<p>
-							<span>I</span> wanted something fun to read, and as a long time Splinter Cell fan I've always wanted to read this book.
-							The writing of the first-person chapters bothers me constantly, but the book does provide and story and setting satisfying
-							as a fan. Some of Fisher's internal thoughts seem a bit out of character, but that is probably of the character I
-							imagined him to be, as the writer had to create himself.</p>
-					</div>
-					<div class="col-image">
-						<img id="book" src="images/splintercell.jpg">
-					</div>
-				</div>
-
-				<div class="row">
-					<h2>what i plan to read</h2>
-					<div class="col-image">
-						<img id="book" src="images/tmol.jpg">
-					</div>
-					<div class="col-text">
-						<p>
-							<span>S</span>omething important to me is having things clean and with a purpose, when I leave my possessions unmanaged
-							they pile up and just make me unhappy, hopefully this book has some good advice that resonates with me.</p>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-text">
-						<p>
-							<span>I</span>'ve heard a few interviews with Jordan Peterson, and I'm very much intrigued to see his views through his
-							writing, and go forward with some of his sentiments in mind.</p>
-					</div>
-					<div class="col-image">
-						<img id="book" src="images/12rol.jpg">
-					</div>
-				</div>
-
-				<!-- <div class="row">
-					<div class="clearfix">
-						<img id="img-right" src="images/12rol.jpg">
-						<p>I've heard a few interviews with Jordan Peterson, and I'm very much intrigued to see his views through his writing,
-							and go forward with some of his sentiments in mind.</p>
-					</div>
-				</div> -->
-
-
-
-			</div>
+		<div id="stripe">
+			<button id="reset">New Colors</button>
+			<span id="message"></span>
+			<button class="mode">Easy</button>
+			<button class="mode selected">Hard</button>
+			
 		</div>
-		<!--container end-->
-	</div>
-	<!--row end-->
 
+		<div id="container">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+		</div>
+		
 
-</body>
-
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
+
+<!-- Made by Steven Andersen -->
